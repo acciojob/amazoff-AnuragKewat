@@ -28,9 +28,9 @@ public class OrderRepository {
         if(unassignedOrderMap.containsKey(orderId)) {
             Order currentOrder = unassignedOrderMap.get(orderId);
             unassignedOrderMap.remove(orderId);
-            DeliveryPartner currentPartner = partnerMap.get(partnerId);
-            currentPartner.setNumberOfOrders(currentPartner.getNumberOfOrders()+1);
-            partnerMap.put(partnerId, currentPartner);
+//            DeliveryPartner currentPartner = partnerMap.get(partnerId);
+//            currentPartner.setNumberOfOrders(currentPartner.getNumberOfOrders()+1);
+//            partnerMap.put(partnerId, currentPartner);
             List<Order> list = new ArrayList<>();
 
             if(orderPartnerPairMap.containsKey(partnerId)) {
